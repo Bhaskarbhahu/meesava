@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+    <parameter name="url" value="http://amazon.com"></parameter>
+    <parameter name="username" value="bhaskarReddy1"></parameter>
+    <parameter name="password" value="password@123"></parameter>
+
+    <test thread-count="2" name="CarLoanDept">
+       <parameter name="url1" value="http://amazon.com"></parameter>
+       <parameter name="username1" value="bhaskarReddy1"></parameter>
+       <parameter name="password1" value="password@123"></parameter>
+        <classes>
+       <class name="org.flipcart.CarLoanDept.CarLoan">
+        </class>
+        </classes>
+      <!--  <classes>
+       <class name="org.flipcart.CarLoanDept.CarLoan1">
+            <methods>
+                <include name="rentalCarLoan"/>
+                <include name="VerifycarLoanAccounts"/>
+                <include name="approvecarLoan"/>
+                <include name="creditAmount"/>
+            </methods>
+        </class>
+        <classes>-->
+        </test>
+      <!--  <test>
+            <class name="org.flipcart.HomeLoanDept.HomeLoan">
+            <methods><include name="registerInToPersonalLoan"/>
+                <include name="VerifyDocuments"/>
+                <include name="approveLoan"/>
+                <include name="creditAmount"/>
+                <include name="suiteLevelParamerization"/>
+                <include name="testLevelParamerization"/>
+                <include name="openNewTabs"/>
+                <include name="screenshot"/>
+            </methods>
+        </class>
+        </test>
+        <test>
+            <class name="org.flipcart.PersonalLoanDept.PersonalLoan">
+                <methods>
+                    <include name="registerInToPersonalLoan"/>
+                    <include name="VerifyDocuments"/>
+                    <include name="approveLoan"/>
+                    <include name="creditAmount"/>
+                    <include name="Handling"/>
+                    <include name="AutoSugestionDrop"/>
+                </methods>
+            </class>
+        </classes>
+    </test>-->
+</suite>
